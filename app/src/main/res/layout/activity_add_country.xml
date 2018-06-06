@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_16"
+    android:paddingBottom="@dimen/padding_16"
+    tools:context=".AddCountryActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_f_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/friend_name"
+        android:layout_alignParentEnd="true"
+        tools:ignore="RtlCompat" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_f_age"
+        android:layout_below="@id/ed_f_name"
+        android:layout_alignParentStart="true"
+        android:hint="@string/friend_age"
+        android:layout_alignEnd="@id/ed_f_name"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_f_address"
+        android:layout_below="@id/ed_f_age"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/ed_f_age"
+        android:hint="@string/friend_address"
+        tools:ignore="RtlCompat" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_f_email"
+        android:layout_below="@id/ed_f_address"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/ed_f_address"
+        android:hint="@string/friend_email"
+        tools:ignore="RtlCompat" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/ed_f_telephone"
+        android:layout_below="@id/ed_f_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/ed_f_email"
+        android:hint="@string/friend_telephone"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ed_f_name"
+        android:layout_below="@+id/ed_f_telephone"
+        android:text="@string/save"
+        tools:ignore="RtlCompat" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/bt_cancel"
+        android:layout_alignTop="@id/btn_save"
+        android:layout_toEndOf="@id/btn_save"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

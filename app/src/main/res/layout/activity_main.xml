@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingTop="@dimen/padding_16"
+    android:paddingBottom="@dimen/padding_16"
+    tools:context="com.a_hamoud.listview_sqlserver.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_search"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/search"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonStyleSmall"
+        android:text="@string/search"
+        android:id="@+id/btn_search"
+        android:layout_below="@+id/ed_search"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlCompat" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/btn_search"
+        android:background="@android:color/holo_blue_bright"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btn_add_freiend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_search"
+        android:layout_toEndOf="@id/btn_search"
+        android:text="@string/add_new_friend"
+        tools:ignore="RtlCompat" />
+
+
+</RelativeLayout>

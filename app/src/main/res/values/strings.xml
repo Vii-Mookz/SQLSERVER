@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ListView-SQLServer</string>
+    <string name="TV_Header">COUNTRIES</string>
+    <string name="btn_Get">Get</string>
+    <string name="country_name">Country Name</string>
+    <string name="capacity">Capacity</string>
+    <string name="add">Add</string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="capital">Capital</string>
+    <string name="search">Search</string>
+    <string name="add_new_friend">Add New Friend</string>
+    <string name="friend_name">Friend Name</string>
+    <string name="friend_age">Friend Age</string>
+    <string name="friend_address">Friend Address</string>
+    <string name="friend_email">Friend Email</string>
+    <string name="friend_telephone">Friend Telephone</string>
+    <string name="names">names</string>
+    <string name="age">age</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="update">update</string>
+    <string name="delete">Delete</string>
+
+</resources>

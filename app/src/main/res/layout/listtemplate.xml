@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblID"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:padding="10dp"
+        android:text="ID"
+        android:textColor="#252525"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblcountryname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblID"
+        android:background="#fff"
+        android:padding="10dp"
+        android:text="Country"
+        android:textColor="#252525"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lblCapitalCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblID"
+        android:background="#fff"
+        android:padding="10dp"
+        android:text="Capital"
+        android:textColor="#252525"
+        android:textSize="15sp" />
+
+</RelativeLayout>
