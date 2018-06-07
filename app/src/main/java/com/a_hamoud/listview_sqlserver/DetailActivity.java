@@ -8,10 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class DetailActivity extends AppCompatActivity {
     EditText ed_name, ed_age, ed_address, ed_email, ed_phone;
     DB db;
     Button btn_delete, btn_update;
+    String timeString;
+    AddCountryActivity addCountryActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +31,9 @@ public class DetailActivity extends AppCompatActivity {
 
         btn_delete = findViewById(R.id.btn_delete);
         btn_update = findViewById(R.id.btn_update);
+
+        addCountryActivity = new AddCountryActivity();
+        timeString = addCountryActivity.getDateTime();
 
         db = (DB) getApplication();
         db.open();
@@ -65,10 +74,12 @@ public class DetailActivity extends AppCompatActivity {
         btn_update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db.save("update cairo set name_='" + ed_name.getText().toString().trim() + "',age_='" + ed_age.getText().toString().trim() + "',address_='" + ed_address.getText().toString().trim() + "',email_='" + ed_email.getText().toString().trim() + "',telephone_='" + ed_phone.getText().toString().trim() + "' where name_ = '" + ed_name.getText().toString().trim() + "'");
+                db.save("update cairo set name_='" + ed_name.getText().toString().trim() + "',age_='" + ed_age.getText().toString().trim() + "',address_='" + ed_address.getText().toString().trim() + "',email_='" + ed_email.getText().toString().trim() + "',telephone_='" + ed_phone.getText().toString().trim() + "',date_time_='" + timeString + "' where name_ = '" + ed_name.getText().toString().trim() + "'");
                 finish();
             }
         });
     }
+
+
 
 }

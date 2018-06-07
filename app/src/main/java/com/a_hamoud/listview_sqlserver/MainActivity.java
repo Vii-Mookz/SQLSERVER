@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     ListView list;
     EditText ed_search;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
